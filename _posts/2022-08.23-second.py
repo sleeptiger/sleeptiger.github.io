@@ -1,3 +1,8 @@
+---
+layout: post
+title:  "첫 번째 실습 예제입니다."
+---
+
 # -*- coding: utf-8 -*-
 """tensorflow_basic.ipynb
 
