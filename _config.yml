@@ -19,7 +19,7 @@ locale                   : "en-US"
 title                    : "sleeptiger_code_Zip"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
+name                     : "STJ Tiger"
 description              : "An amazing website."
 url                      : "https://sleeptiger.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "Your Name"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
+  bio              : "I am STJ"
   location         : "Somewhere"
   email            :
   links:
