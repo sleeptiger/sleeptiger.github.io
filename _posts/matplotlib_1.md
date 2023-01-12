@@ -1,0 +1,57 @@
+# matplotlib.pyplot 모듈은 함수를 사용해서 그래프를 만든다.
+
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+```
+
+- 기본 그래프
+
+
+```python
+plt.plot([1.5,2,3,4]) # [ ]안에 들어있는 value는 Y값이다. /X의 0,1,2,3은 자동 생성
+plt.show() # 그래프를 보여주는 
+```
+
+
+![png](matplotlib_1_files/matplotlib_1_3_0.png)
+
+
+
+```python
+plt.plot([1,2,3,4], [1,4,9,16]) # [X],[Y] 순서가 된다.
+plt.show()
+```
+
+
+![png](matplotlib_1_files/matplotlib_1_4_0.png)
+
+
+
+```python
+plt.plot([1,2,3,4], [1,4,9,16], 'ro') # 'ro' = red + markder
+plt.axis([0,6,0,20]) # 범위를 한정 ([xmin, xmax, ymin, ymax])
+plt.show()
+```
+
+
+![png](matplotlib_1_files/matplotlib_1_5_0.png)
+
+
+
+```python
+data_dict = {'data_x' : [1,2,3,4,5], 'data_y' : [2,3,5,10,8]}
+
+plt.plot('data_x', 'data_y', 'ro', data= data_dict,)
+plt.show()
+```
+
+
+![png](matplotlib_1_files/matplotlib_1_6_0.png)
+
+
+
+```python
+
+```
