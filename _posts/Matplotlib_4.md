@@ -1,0 +1,104 @@
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+```
+
+# Matplotlib 선 종류 지정하기
+- 
+
+
+```python
+plt.plot([1,2,3], [4,4,4], '-', c='C0', label='Solid')
+plt.plot([1,2,3], [3,3,3], '--', c='C0', label='Dashed')
+plt.plot([1,2,3], [2,2,2], ':', c='C0', label='Dotted')
+plt.plot([1,2,3], [1,1,1], '-.', c='C0', label='Dash-dot')
+
+plt.xlabel('X-Axis')
+plt.ylabel('Y-Axis')
+plt.axis([0.8, 3.2, 0.5, 5.0])
+plt.legend(loc='upper right', ncol=4)
+plt.show()
+
+```
+
+
+![png](Matplotlib_4_files/Matplotlib_4_2_0.png)
+
+
+
+```python
+plt.plot([1, 2, 3], [4, 4, 4], linestyle='solid', color='C0', label="'solid'")
+plt.plot([1, 2, 3], [3, 3, 3], linestyle='dashed', color='C0', label="'dashed'")
+plt.plot([1, 2, 3], [2, 2, 2], linestyle='dotted', color='C0', label="'dotted'")
+plt.plot([1, 2, 3], [1, 1, 1], linestyle='dashdot', color='C0', label="'dashdot'")
+plt.xlabel('X-Axis')
+plt.ylabel('Y-Axis')
+plt.axis([0.8, 3.2, 0.5, 5.0])
+plt.legend(loc='upper right', ncol=4)
+plt.tight_layout() # 범례를 그래프에 맞추어 준다.
+plt.show()
+```
+
+
+![png](Matplotlib_4_files/Matplotlib_4_3_0.png)
+
+
+# Matplotlib line색상  
+
+
+```python
+plt.plot([1,2,3,4], [2.0,3.0,5.0,10.0], 'r')
+plt.plot([1,2,3,4], [2.0,2.8, 4.3, 6.5,], 'g')
+plt.plot([1,2,3,4], [2.0,2.5,3.3,4.5], 'b')
+plt.xlabel('X-Axis')
+plt.ylabel('Y-Axis')
+plt.show()
+```
+
+
+![png](Matplotlib_4_files/Matplotlib_4_5_0.png)
+
+
+
+```python
+plt.plot([1, 2, 3, 4], [2.0, 3.0, 5.0, 10.0], color='limegreen')
+plt.plot([1, 2, 3, 4], [2.0, 2.8, 4.3, 6.5], color='violet')
+plt.plot([1, 2, 3, 4], [2.0, 2.5, 3.3, 4.5], color='dodgerblue')
+plt.xlabel('X-Axis')
+plt.ylabel('Y-Axis')
+
+plt.show()
+```
+
+
+![png](Matplotlib_4_files/Matplotlib_4_6_0.png)
+
+
+
+```python
+plt.plot([1,2,3,4], [2,3,5,10], color='#e35f62', # Hex_code도 사용 가능
+         marker ='o', linestyle='--') 
+plt.xlabel('X-Axis')
+plt.ylabel('Y-Axis')
+
+plt.show()
+```
+
+
+![png](Matplotlib_4_files/Matplotlib_4_7_0.png)
+
+
+- 기본 색상
+<img src = https://wikidocs.net/images/page/92085/set_color_04.PNG>
+
+- Tableau 색상
+
+<img src = https://wikidocs.net/images/page/92085/set_color_07.PNG>
+
+- CSS 색상 
+<img src = https://wikidocs.net/images/page/92085/set_color_05.PNG>
+
+
+```python
+
+```
