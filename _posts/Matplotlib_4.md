@@ -1,3 +1,11 @@
+---
+layout: page
+title:  "Matplotlib 선 종류와 색상 지정"
+categories : matplotlib
+tag: python
+---
+
+
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
@@ -22,7 +30,7 @@ plt.show()
 ```
 
 
-![png](Matplotlib_4_files/Matplotlib_4_2_0.png)
+![Foo](/images/Matplotlib_4_files/Matplotlib_4_2_0.png)
 
 
 
@@ -40,7 +48,7 @@ plt.show()
 ```
 
 
-![png](Matplotlib_4_files/Matplotlib_4_3_0.png)
+![Foo](/images/Matplotlib_4_files/Matplotlib_4_3_0.png)
 
 
 # Matplotlib line색상  
@@ -56,7 +64,7 @@ plt.show()
 ```
 
 
-![png](Matplotlib_4_files/Matplotlib_4_5_0.png)
+![Foo](/images/Matplotlib_4_files/Matplotlib_4_5_0.png)
 
 
 
@@ -71,7 +79,7 @@ plt.show()
 ```
 
 
-![png](Matplotlib_4_files/Matplotlib_4_6_0.png)
+![Foo](/images/Matplotlib_4_files/Matplotlib_4_6_0.png)
 
 
 
@@ -85,7 +93,7 @@ plt.show()
 ```
 
 
-![png](Matplotlib_4_files/Matplotlib_4_7_0.png)
+![Foo](/images/Matplotlib_4_files/Matplotlib_4_7_0.png)
 
 
 - 기본 색상
