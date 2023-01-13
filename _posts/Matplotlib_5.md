@@ -1,0 +1,148 @@
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+```
+
+# Matplotlib의 그래프 영역 채우기
+- fill_between() - 두 ```수평``` 방향의 곡선 사이를 채웁니다.
+- fill_betweenx() - 두 ```수직``` 방향의 곡선 사이를 채웁니다.
+- fill() - ```다각형``` 영역을 채웁니다
+
+- fill_between() : 기본 사용
+
+
+```python
+x = [1,2,3,4]
+y = [2,3,5,10]
+
+plt.plot(x,y)
+plt.fill_between(x[1:3], y[1:3], alpha=0.5) # alpha -- 투명도 1에 가까울 수록 찐해짐
+
+plt.show()
+# fill_between() 함수에 x[1:3], y[1:3]를 순서대로 입력하면,
+#네 점 (x[1], y[1]), (x[2], y[2]), (x[1], 0), (x[2], 0)을 잇는 영역이 채워집니다.
+
+ 
+
+```
+
+
+![png](Matplotlib_5_files/Matplotlib_5_3_0.png)
+
+
+- fill-betweenx()
+
+
+```python
+x = [1,2,3,4]
+y = [2,3,5,10]
+
+plt.plot(x,y)
+plt.xlabel('X-Axis')
+plt.ylabel('Y-Axis')
+plt.fill_betweenx(y[2:4], x[2:4], alpha=0.5)
+plt.show()
+```
+
+
+![png](Matplotlib_5_files/Matplotlib_5_5_0.png)
+
+
+
+```python
+x = [1, 2, 3, 4]
+y1 = [2, 3, 5, 10]
+y2 = [1, 2, 4, 8]
+
+plt.plot(x, y1)
+plt.plot(x, y2)
+plt.xlabel('X-Axis')
+plt.ylabel('Y-Axis')
+plt.fill_between(x[1:3], y1[1:3], y2[1:3], color='lightgray', alpha=0.5)
+
+plt.show()
+```
+
+
+![png](Matplotlib_5_files/Matplotlib_5_6_0.png)
+
+
+
+```python
+x = [1, 2, 3, 4]
+y1 = [2, 3, 5, 10]
+y2 = [1, 2, 4, 8]
+
+plt.plot(x, y1)
+plt.plot(x, y2)
+plt.xlabel('X-Axis')
+plt.ylabel('Y-Axis')
+plt.fill([1.9, 1.9, 3.1, 3.1], [1.0, 4.0, 6.0, 3.0], color = 'lightgray', alpha=0.5)
+
+plt.show()
+```
+
+
+![png](Matplotlib_5_files/Matplotlib_5_7_0.png)
+
+
+- fill() 함수는 x,y값의 리스트를 입력하면 그 곳을 색칠해준다.
+
+# Matplotlib axis 스케일 지정하기
+
+- X축 Scale 지정
+
+
+```python
+x = np.linspace(-10, 10, 100)
+y = x **3
+
+plt.plot(x,y)
+plt.xscale('symlog')
+
+plt.show()
+```
+
+
+![png](Matplotlib_5_files/Matplotlib_5_11_0.png)
+
+
+- symlog = symmetrical Log Scale(원점을 기준으로 양/음의 방향이 대칭적인 로그 스케일로 표시)
+
+- Y축 scale 지정
+
+
+```python
+x = np.linspace(0, 5, 100)
+y = np.exp(x)
+
+plt.plot(x,y)
+plt.yscale('log') # Y축을 로그 스케일 
+
+plt.show()
+```
+
+
+![png](Matplotlib_5_files/Matplotlib_5_14_0.png)
+
+
+
+```python
+x = np.linspace(0, 5, 100)
+y = np.exp(x)
+
+plt.plot(x, y)
+plt.yscale('linear') # Y축을 선형 스케일 그래프
+#plt.yscale('log')
+
+plt.show()
+```
+
+
+![png](Matplotlib_5_files/Matplotlib_5_15_0.png)
+
+
+
+```python
+
+```
