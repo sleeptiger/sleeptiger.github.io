@@ -1,0 +1,75 @@
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+```
+
+# Matplotlib 여러 곡선 그리기
+
+
+```python
+x = np.arange(0,2, 0.2)
+
+plt.plot(x, x, 'r--', x, x**2, 'bo', x, x**3, 'g-.') # 여러개의 줄로 만든후 설정 값 변경도 가능
+plt.show()
+```
+
+
+![png](Matplotlib_6_files/Matplotlib_6_2_0.png)
+
+
+# Matplotlib Grid
+
+
+```python
+x = np.arange(0,2, 0.2)
+
+plt.plot(x, x, 'bo')
+plt.plot(x, x**2, color='#e35f62', marker='*', linewidth=2)
+plt.plot(x, x**3, color='springgreen', marker='^', markersize=9)
+plt.grid(True) # grid Create
+
+plt.show()
+```
+
+
+![png](Matplotlib_6_files/Matplotlib_6_4_0.png)
+
+
+- 축 지정하기( X, Y)
+
+
+```python
+x = np.arange(0,2, 0.2)
+
+plt.plot(x, x, 'bo')
+plt.plot(x, x**2, color='#e35f62', marker='*', linewidth=2)
+plt.plot(x, x**3, color='springgreen', marker='^', markersize=9)
+plt.grid(True, axis='y') # defalut_value = both / axis = 'X' or 'Y'
+
+plt.show()
+```
+
+
+![png](Matplotlib_6_files/Matplotlib_6_6_0.png)
+
+
+
+```python
+x = np.arange(0,2, 0.2)
+
+plt.plot(x, x, 'bo')
+plt.plot(x, x**2, color='#e35f62', marker='*', linewidth=2)
+plt.plot(x, x**3, color='springgreen', marker='^', markersize=9)
+plt.grid(True, axis='x', color='red', alpha=0.5, linestyle='--') 
+
+plt.show()
+```
+
+
+![png](Matplotlib_6_files/Matplotlib_6_7_0.png)
+
+
+
+```python
+
+```
