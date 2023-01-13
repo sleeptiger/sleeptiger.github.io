@@ -1,0 +1,63 @@
+```python
+import numpy as np 
+import matplotlib.pyplot as plt
+```
+
+# Matplotlib의 축 범위 지정
+
+- xlim() - x축이 표시되는 범위를 지정하거나 변환 한다.
+- ylim() - y축이 표시되는 범위를 지정하거나 변환 한다.
+- axis() - x,y축이 표시되는 범위를 지정하거나 변환한다.
+
+
+
+```python
+plt.plot([1,2,3,4], [2,3,5,10])
+plt.xlabel('X-Axis')
+plt.ylabel('Y-Axis')
+plt.xlim([0,5]) # x축은 0~5
+plt.ylim([0,20])  # y축은 0~20
+
+plt.show()
+```
+
+
+![png](Matplotlib_3_files/Matplotlib_3_3_0.png)
+
+
+
+```python
+plt.plot([1,2,3,4], [2,3,5,10])
+plt.xlabel('X-Axis')
+plt.ylabel('Y-Axis')
+plt.axis([0,5,0,20]) # == xlim + ylim
+plt.show()
+```
+
+
+![png](Matplotlib_3_files/Matplotlib_3_4_0.png)
+
+
+- option 
+
+
+```python
+plt.plot([1,2,3,4], [2,3,5,10])
+plt.xlabel('X-Axis')
+plt.ylabel('Y-Axis')
+plt.axis('Scaled')
+
+# axis()의 옵션은 다음과 같다.
+#'on' | 'off' | 'equal' | 'scaled' | 'tight' | 'auto' | 'normal' | 'image' | 'square'
+# Scaled = 축의 길이가 동일하게 표시
+plt.show()
+```
+
+
+![png](Matplotlib_3_files/Matplotlib_3_6_0.png)
+
+
+
+```python
+
+```
